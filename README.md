@@ -19,7 +19,6 @@ The project is built using React with TypeScript and styled using Tailwind CSS, 
 ### 🌐 General
 -  TypeScript for strict typing throughout the codebase.
 -  Responsive Design using Tailwind utility classes.
--  Basic Documentation provided via Storybook.
 -  Simple Demo included in App.tsx.
 
 ---
@@ -44,9 +43,6 @@ Run the demo app: npm run dev
 │   ├── types/                  # All TypeScript interface definitions (index.ts)
 │   ├── App.tsx                 # Main demo application
 │   └── main.tsx                # Application entry point
-├── stories/
-│   ├── DataTable.stories.tsx   # DataTable documentation
-│   └── InputField.stories.tsx  # InputField documentation
 ├── tailwind.config.ts          # Tailwind configuration
 └── postcss.config.ts           # PostCSS setup
 ```
