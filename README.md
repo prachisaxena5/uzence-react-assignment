@@ -3,7 +3,7 @@ This repository contains the solution for the component development assignment, 
 
 The project is built using React with TypeScript and styled using Tailwind CSS, adhering to modern component patterns, responsiveness, and accessibility best practices.
 
-# ✅ Deliverables Summary
+## ✅ Deliverables Summary
 
 ### 📝 InputField Component
 - Flexible input with variants (filled, outlined, ghost) and sizes (sm, md, lg).
@@ -16,7 +16,7 @@ The project is built using React with TypeScript and styled using Tailwind CSS, 
 - Supports row selection (single/multiple).
 - Handles Loading and Empty states for optimal UX.
 
-# 🌐 General
+### 🌐 General
 -  TypeScript for strict typing throughout the codebase.
 -  Responsive Design using Tailwind utility classes.
 -  Basic Documentation provided via Storybook.
@@ -24,16 +24,16 @@ The project is built using React with TypeScript and styled using Tailwind CSS, 
 
 ---
 
-# 🛠 Tech Stack
-## ⚛️ React (Functional Components & Hooks)
+## 🛠 Tech Stack
+### ⚛️ React (Functional Components & Hooks)
 - ⚡ Vite (Build Tooling)
 - 🎨 Tailwind CSS (Utility-First Styling)
 - 🤖 TypeScript (Strict Type Checking)
 
-## Setup
+### Setup
 Run the demo app: npm run dev
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```bash
 ├── src/
