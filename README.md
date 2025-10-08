@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# 🚀 Component Assignment: InputField & DataTable
+This repository contains the solution for the component development assignment, focusing on building two production-ready, flexible UI components: InputField and DataTable.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project is built using React with TypeScript and styled using Tailwind CSS, adhering to modern component patterns, responsiveness, and accessibility best practices.
 
-Currently, two official plugins are available:
+# ✅ Deliverables Summary
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📝 InputField Component
+- Flexible input with variants (filled, outlined, ghost) and sizes (sm, md, lg).
+- Supports disabled, readOnly, and invalid states.
+- Includes optional password toggle and a clear button feature.
 
-## React Compiler
+### 📊 DataTable Component
+- Supports tabular data display with TypeScript Generics (<T>).
+- Includes robust column sorting functionality.
+- Supports row selection (single/multiple).
+- Handles Loading and Empty states for optimal UX.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 🌐 General
+-  TypeScript for strict typing throughout the codebase.
+-  Responsive Design using Tailwind utility classes.
+-  Basic Documentation provided via Storybook.
+-  Simple Demo included in App.tsx.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🛠 Tech Stack
+## ⚛️ React (Functional Components & Hooks)
+- ⚡ Vite (Build Tooling)
+- 🎨 Tailwind CSS (Utility-First Styling)
+- 🤖 TypeScript (Strict Type Checking)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Setup
+Run the demo app: npm run dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+├── src/
+│   ├── components/
+│   │   ├── DataTable/          # Generic Table component logic
+│   │   ├── InputField/         # Input component logic
+│   │   └── utils/              # Shared icons and utilities (Icons.tsx)
+│   ├── types/                  # All TypeScript interface definitions (index.ts)
+│   ├── App.tsx                 # Main demo application
+│   └── main.tsx                # Application entry point
+├── stories/
+│   ├── DataTable.stories.tsx   # DataTable documentation
+│   └── InputField.stories.tsx  # InputField documentation
+├── tailwind.config.ts          # Tailwind configuration
+└── postcss.config.ts           # PostCSS setup
 ```
