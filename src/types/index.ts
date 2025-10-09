@@ -2,7 +2,7 @@ import type { ChangeEvent,ReactNode } from "react";
 
 export interface InputFieldProps {
   value: string;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   onClear?: () => void;
   label?: string;
   placeholder?: string;
